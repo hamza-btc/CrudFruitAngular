@@ -1,0 +1,40 @@
+<div class="container">
+    <legend> Edit Item</legend>
+    <form >
+        <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input
+                type="text"
+                class="form-control"
+                name="name"
+                id=""
+             [(ngModel)]="mocfruitDta.name"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Price</label>
+            <input
+                type="text"
+                class="form-control"
+                name="price"
+                id=""
+                [(ngModel)]="mocfruitDta.price"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Quantity</label>
+            <input
+                type="text"
+                class="form-control"
+                name="quantity"
+                id=""
+                [(ngModel)]="mocfruitDta.quantity"
+            />
+        </div>
+     
+        <button class="btn btn-warning"  (click)="update(mocfruitDta)"> Edit fruit</button>
+    </form>
+    
+    
+    </div>
+    

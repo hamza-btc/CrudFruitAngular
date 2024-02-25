@@ -1,0 +1,39 @@
+<div class="container">
+<legend> Create Item</legend>
+<form  (ngSubmit)="onSubmit(fruitForm.value)" #fruitForm ="ngForm" >
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input
+            type="text"
+            class="form-control"
+            name="name"
+            id=""
+            ngModel #name="ngModel"
+        />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Price</label>
+        <input
+            type="text"
+            class="form-control"
+            name="price"
+            id=""
+            ngModel #price="ngModel"
+        />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Quantity</label>
+        <input
+            type="text"
+            class="form-control"
+            name="quantity"
+            id=""
+            ngModel #quantity="ngModel"
+        />
+    </div>
+ 
+    <button class="btn btn-success"> Add fruit</button>
+</form>
+
+
+</div>
